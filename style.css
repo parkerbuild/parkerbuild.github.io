@@ -6,26 +6,51 @@ body, html {
     background-color: #f5f5f5;
 }
 
+/* Container */
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 50px auto;
-    text-align: center;
+    margin: 0 auto;
 }
 
-/* Header Section */
+/* Header Styles */
 .header {
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd; /* Optional border */
 }
 
 .header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 24px; /* Your name font size */
 }
 
-.header p {
-    font-size: 18px;
-    color: #666;
+.navbar {
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline; /* Displays items in a line */
+    margin-left: 20px; /* Space between menu items */
+}
+
+.navbar a {
+    text-decoration: none; /* Removes underline */
+    color: #000; /* Text color */
+}
+
+/* Hero Area Styles */
+.hero {
+    margin: 20px 0; /* Spacing above and below hero area */
+}
+
+.hero video {
+    width: 100%; /* Make video full width */
+    max-height: 400px; /* Set a max height */
+    border-radius: 8px; /* Rounded corners */
 }
 
 /* Portfolio Grid */
@@ -39,7 +64,6 @@ body, html {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft box shadow */
 }
 
 .grid-item img {
@@ -54,7 +78,6 @@ body, html {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
-/* Overlay Text */
 .overlay {
     position: absolute;
     top: 0;

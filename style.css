@@ -103,3 +103,52 @@ body, html {
 .grid-item:hover .overlay {
     opacity: 1; /* Show overlay on hover */
 }
+/* Project Details Page Styles */
+.project-details-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.project-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.project-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.project-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.project-category {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-image, .project-video {
+    flex: 1 1 45%; /* Adjust the width for images and videos */
+    margin-bottom: 30px;
+}
+
+.project-description {
+    flex: 1 1 100%; /* Full width for the description */
+    text-align: left;
+}
+
+.project-description p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

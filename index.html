@@ -3,86 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <h1>My Name</h1>
-            <p>I'm a digital producer who brings bold campaigns to life. I specialize in turning big ideas into real-world digital assets—from websites and banners to interactive media.</p>
-        </header>
-
-        <!-- Portfolio Grid -->
-        <div class="portfolio-grid">
-            <!-- Grid Item 1 -->
-            <div class="grid-item">
-                <img src="images/Yellowstone_Dinner Party_1x1.jpg" alt="Campaign 1">
-                <div class="overlay">
-                    <h2>Bourbon For All</h2>
-                </div>
-            </div>
-
-            <!-- Grid Item 2 -->
-            <div class="grid-item">
-                <img src="images/Organic_HofR_FBIG_InFeed_Amahle-Static_Card1_April.png" alt="Campaign 2">
-                <div class="overlay">
-                    <h2>Life Well Crafted</h2>
-                </div>
-            </div>
-
-            <!-- Grid Item 3 -->
-            <div class="grid-item">
-                <img src="images/HotShot_Moment_Social_Static_Value_1x1.jpg" alt="Campaign 3">
-                <div class="overlay">
-                    <h2>Hot Shot Moment</h2>
-                </div>
-            </div>
-            <!-- Example for a new grid item -->
-<div class="grid-item">
-    <img src="images/daily-essentials-amazon-300x250.jpg" alt="Campaign 4">
-    <div class="overlay">
-        <h2>Same Day It</h2>
-    </div>
-</div>
-<!-- Example for a new grid item -->
-<div class="grid-item">
-    <img src="images/Cutter.png" alt="Campaign 5">
-    <div class="overlay">
-        <h2>Protect Your People</h2>
-    </div>
-</div>
-<!-- Example for a new grid item -->
-<div class="grid-item">
-    <img src="images/images/IMG_1623.JPG" alt="Campaign 6">
-    <div class="overlay">
-        <h2>The Black Rep</h2>
-    </div>
-</div>
-<!-- Example for a new grid item -->
-<div class="grid-item">
-    <img src="images/your-new-image.jpg" alt="Campaign 4">
-    <div class="overlay">
-        <h2>Campaign 4</h2>
-    </div>
-</div>
-<!-- Example for a new grid item -->
-<div class="grid-item">
-    <img src="images/your-new-image.jpg" alt="Campaign 4">
-    <div class="overlay">
-        <h2>Campaign 4</h2>
-    </div>
-</div>
-<!-- Example for a new grid item -->
-<div class="grid-item">
-    <img src="images/your-new-image.jpg" alt="Campaign 4">
-    <div class="overlay">
-        <h2>Campaign 4</h2>
-    </div>
-</div>
-
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <!-- Hero Area for Video Reel -->
+    <section class="hero">
+        <video controls>
+            <source src="path_to_your_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio-grid" id="work">
+        <div class="container">
+            <!-- Your grid items go here -->
+            <div class="grid-item">
+                <img src="path_to_your_image1.jpg" alt="Campaign 1">
+                <div class="overlay">
+                    <h2>Campaign Name 1</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="path_to_your_image2.jpg" alt="Campaign 2">
+                <div class="overlay">
+                    <h2>Campaign Name 2</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="path_to_your_image3.jpg" alt="Campaign 3">
+                <div class="overlay">
+                    <h2>Campaign Name 3</h2>
+                </div>
+            </div>
+            <!-- Add more grid items as needed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <p>Write a brief about yourself here.</p>
+        </div>
+    </section>
 </body>
 </html>

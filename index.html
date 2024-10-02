@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #777;
-        }
-    </style>
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional custom CSS -->
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is my first website hosted on GitHub Pages!</p>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+    </header>
+
+    <section>
+        <h2>My Work</h2>
+
+        <article>
+            <h3>Brand: XYZ Company</h3>
+            <p><strong>Ask/Problem:</strong> Describe the client's needs or challenges.</p>
+            <p><strong>Solution/Storytelling:</strong> Detail your approach and the narrative you crafted.</p>
+            <p><strong>Assets Deployed:</strong> 
+                <ul>
+                    <li>Social Media Campaigns</li>
+                    <li>Digital Out-of-Home (OOH)</li>
+                    <li>Website Development</li>
+                    <li>High Impact Units</li>
+                    <li>Gamification Units</li>
+                    <li>HTML5 Display Banners</li>
+                    <li>Online Video (OLV)</li>
+                    <li>Connected TV (CTV)</li>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <h3>Brand: ABC Corp</h3>
+            <p><strong>Ask/Problem:</strong> Describe another project here.</p>
+            <p><strong>Solution/Storytelling:</strong> Detail your approach and the narrative.</p>
+            <p><strong>Assets Deployed:</strong> 
+                <ul>
+                    <li>Social Media Campaigns</li>
+                    <li>Website Development</li>
+                    <li>Digital Ads</li>
+                    <li>Content Strategy</li>
+                </ul>
+            </p>
+        </article>
+
+        <!-- Add more projects as needed -->
+    </section>
+
+    <footer>
+        <p>© Your Name | Portfolio 2024</p>
+    </footer>
 </body>
 </html>

@@ -42,24 +42,78 @@ body, html {
     color: #000; /* Text color */
 }
 
-/* Hero Area Styles */
-.hero {
-    margin: 20px 0; /* Spacing above and below hero area */
+/* Hero Media Section Styles */
+.hero-media {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width */
+    height: auto; /* Height should be auto for flexibility */
+    max-height: 600px; /* Set a reasonable max height for large screens */
+    overflow: hidden; /* Prevent content overflow */
+    margin-bottom: 30px; /* Space below the hero */
+    border-radius: 8px; /* Optional: Rounded corners for styling */
 }
 
-.hero video {
-    width: 100%; /* Make video full width */
-    max-height: 400px; /* Set a max height */
-    border-radius: 8px; /* Rounded corners */
+.hero-media img, .hero-media video {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container space */
+}
+
+/* Project Content Styling */
+.project-content {
+    display: grid; /* Use grid for responsive layouts */
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    gap: 20px; /* Space between content blocks */
+    margin-bottom: 30px; /* Add space below the section */
+}
+
+.project-description {
+    grid-column: span 2; /* Full width for the description */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-content {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .project-description {
+        grid-column: span 1; /* Adjust for single column */
+    }
+
+    .hero-media {
+        max-height: 300px; /* Reduce max height on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-media {
+        max-height: 200px; /* Further reduce max height for mobile */
+    }
 }
 
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
     gap: 15px; /* Spacing between items */
 }
 
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+}
+
+/* Grid Item Styling */
 .grid-item {
     position: relative;
     overflow: hidden;
@@ -78,6 +132,7 @@ body, html {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+/* Overlay for Project Media */
 .overlay {
     position: absolute;
     top: 0;
@@ -102,125 +157,4 @@ body, html {
 /* Hover State for Overlay */
 .grid-item:hover .overlay {
     opacity: 1; /* Show overlay on hover */
-}
-/* Project Details Page Styles */
-.project-details-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-.project-header {
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.project-header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.project-header p {
-    font-size: 18px;
-    color: #666;
-}
-
-.project-category {
-    font-style: italic;
-    color: #999;
-    margin-bottom: 30px;
-}
-
-.project-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.project-image, .project-video {
-    flex: 1 1 45%; /* Adjust the width for images and videos */
-    margin-bottom: 30px;
-}
-
-.project-description {
-    flex: 1 1 100%; /* Full width for the description */
-    text-align: left;
-}
-
-.project-description p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-/* Hero Media Styling */
-.hero-media {
-    display: flex; /* Center the content */
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Full width */
-    height: auto; /* Auto height for responsiveness */
-    overflow: hidden; /* Prevent image overflow */
-    position: relative; /* Position context for the child elements */
-    margin-bottom: 30px; /* Space below the hero */
-}
-
-.hero-media img, .hero-media video {
-    max-width: 100%; /* Ensure the media fits within the container */
-    width: 100%; /* full width of the parent */
-    height: auto; /* maintain aspect ratio */
-    border-radius: 8px; /* Add slight rounding for a clean look */
-}
-    
-  /* Make Hero Section Responsive */
-@media (max-width: 768px) {
-    .hero-media {
-        height: auto; /* Let the image adjust automatically */
-    }
-
-    .hero-media img, .hero-media video {
-        width: 100%; /* Full width on smaller screens */
-        height: auto;
-    }
-}
-
-/* Project Content Styling */
-.project-content {
-    display: grid; /* Use grid for responsive layouts */
-    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
-    gap: 20px;
-    margin-bottom: 30px; /* Add space between content sections */
-}
-
-.project-description {
-    grid-column: span 2; /* Full width description */
-}
-
-/* Responsive Project Content Adjustments */
-@media (max-width: 768px) {
-    .project-content {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-
-    .project-description {
-        grid-column: span 1; /* Adjust for single column */
-    }
-}
-
-/* Responsive Portfolio Grid */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columns for larger screens */
-    gap: 15px; /* Spacing between items */
-}
-
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr; /* Single column for small screens */
-    }
 }

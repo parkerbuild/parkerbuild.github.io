@@ -39,6 +39,7 @@ body, html {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft box shadow */
 }
 
 .grid-item img {
@@ -53,6 +54,7 @@ body, html {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+/* Overlay Text */
 .overlay {
     position: absolute;
     top: 0;

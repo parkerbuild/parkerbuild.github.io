@@ -131,7 +131,7 @@ body, html {
 
 /* The main content should take all available space */
 #portfolio {
-    flex: 1; /* Take up remaining space */
+    flex: 1 0 auto; /* Ensure it takes up the remaining space */
 }
 
 .project-description {
@@ -231,4 +231,5 @@ footer {
     padding: 10px 0; /* Some padding for spacing */
     width: 100%; /* Full width */
     margin-top: auto; /* Push footer to bottom */
+    flex-shrink: 0; /* Prevent footer from shrinking */
 }

@@ -78,30 +78,46 @@ body, html {
 }
 
 .hero-overlay {
-    position: absolute; /* Position overlay absolutely */
+    position: absolute; /* Position the overlay absolutely */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center overlay */
-    color: black; /* Text color */
-    font-size: 48px; /* Adjust font size as needed */
-    text-align: center; /* Center text */
-    z-index: 1; /* Bring overlay text above video */
+    color: #000; /* Change text color to dark (or #333 for better contrast) */
+    font-size: 48px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    background: rgba(255, 255, 255, 0.7); /* Add a subtle background */
+    padding: 10px 20px; /* Add padding to enhance text visibility */
+    border-radius: 8px; /* Optional: rounded corners */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Bring overlay text above the video */
+}
+
+/* Ensuring the text appears on one line */
+.hero-overlay span {
+    display: inline; /* Make the elements inline */
+    white-space: nowrap; /* Prevent text from breaking onto a new line */
 }
 /* CTA Button Styles */
 .cta-button {
-    display: inline-block;
-    margin-top: 20px; /* Space above the button */
-    padding: 10px 20px; /* Button padding */
-    background-color: #D8745B; /* Button color matching the brand */
-    color: white; /* Button text color */
+    font-size: 16px; /* Smaller font size */
+    padding: 10px 20px; /* Reduced padding */
+    border: 2px solid #fff; /* Keep the white border */
+    background-color: transparent; /* No background color */
+    color: #fff; /* White text */
+    text-transform: uppercase; /* Uppercase text for styling */
     text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth color change */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Make it inline for better control */
+    margin-top: 30px; /* Adjust space around the button */
 }
 
+/* Adjust button size on hover */
 .cta-button:hover {
-    background-color: #E1B76F; /* Lighter shade on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Add subtle hover effect */
+    color: #fff; /* Maintain white text color */
 }
+
 /* Project Content Styling */
 .project-content {
     display: grid; /* Use grid for responsive layouts */

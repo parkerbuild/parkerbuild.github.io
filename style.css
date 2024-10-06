@@ -215,3 +215,12 @@ body, html {
 .grid-item:hover .overlay {
     opacity: 1; /* Show overlay on hover */
 }
+/* Style footer to align at the bottom */
+footer {
+    background-color: #222; /* Darker footer color */
+    color: #fff; /* White text */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Some padding for spacing */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push footer to bottom */
+}

@@ -46,79 +46,79 @@ body, html {
 }
 
 /* Hero Section Styles */
-.hero {
-    position: relative; /* Position context for absolute elements */
-    overflow: hidden; /* Hide any overflowing content */
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-}
-
-.hero-media {
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    width: 100%; /* Full width */
-    height: auto; /* Height should be auto for flexibility */
+.hero-container {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
 }
 
 .hero-background {
-    background-color: #f5f5f5; /* Use warm tan or black for the background */
-    height: 100%; /* Full height */
-    display: flex; /* Flexbox for centering content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Video is in the background */
 }
 
-.hero-media iframe {
-    position: absolute; /* Position the video absolutely */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    transform: translate(-50%, -50%); /* Center the iframe */
-    z-index: -1; /* Send video behind other content */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Cover the entire hero area */
 }
 
 .hero-overlay {
-    position: absolute; /* Position the overlay absolutely */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center overlay */
-    color: #000; /* Change text color to dark (or #333 for better contrast) */
-    font-size: 48px; /* Adjust font size */
-    font-weight: bold; /* Make text bold */
-    background: rgba(255, 255, 255, 0.7); /* Add a subtle background */
-    padding: 10px 20px; /* Add padding to enhance text visibility */
-    border-radius: 8px; /* Optional: rounded corners */
-    text-align: center; /* Center the text */
-    z-index: 1; /* Bring overlay text above the video */
+    position: relative;
+    z-index: 1; /* Bring text content above video */
+    color: white; /* Text color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Optional: semi-transparent background */
 }
 
-/* Ensuring the text appears on one line */
-.hero-overlay span {
-    display: inline; /* Make the elements inline */
-    white-space: nowrap; /* Prevent text from breaking onto a new line */
+.hero-overlay h1 {
+    font-size: 3em; /* Customize heading size */
+    margin: 0;
+    letter-spacing: 2px; /* Spacing between letters */
 }
-/* CTA Button Styles */
+
+.hero-overlay p {
+    font-size: 1.5em;
+    margin: 10px 0 20px 0; /* Spacing for the paragraph */
+}
+
 .cta-button {
-    font-size: 16px; /* Smaller font size */
-    padding: 10px 20px; /* Reduced padding */
-    border: 2px solid #245; /* Keep the white border */
-    background-color: #FFA500; /* Orange background color */
-    color: #333; /* White text */
-    text-transform: uppercase; /* Uppercase text for styling */
+    background-color: #E1B76F; /* Customize button color */
+    color: #fff; /* Button text color */
+    padding: 12px 24px; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transition */
-    display: inline-block; /* Make it inline for better control */
-    margin-top: 30px; /* Adjust space around the button */
+    transition: background 0.3s; /* Smooth hover effect */
 }
 
-/* Adjust button size on hover */
 .cta-button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Add subtle hover effect */
-    color: #fff; /* Maintain white text color */
+    background-color: #D8745B; /* Change color on hover */
+}
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
 }
 
 /* Project Content Styling */

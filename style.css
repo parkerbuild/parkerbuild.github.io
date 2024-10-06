@@ -1,15 +1,96 @@
 /* Basic Styles */
 body, html {
     height: 100%; /* Full height for the body */
-   margin: 0; /* Remove any default margin */
+    margin: 0; /* Remove any default margin */
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #F5F5F5;
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Arrange elements in a column */
 }
 
-/* Container */
+/* Hero Section Styles */
+.hero-container {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Video is in the background */
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Cover the entire hero area */
+    z-index: 0; /* Ensure video is behind the overlay */
+}
+
+.hero-overlay {
+    position: absolute; /* Change to absolute to position relative to .hero-container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 1; /* Bring text content above video */
+    color: white; /* Text color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background: rgba(0, 0, 0, 0.4); /* Optional: semi-transparent background */
+}
+
+.hero-overlay h1 {
+    font-size: 3em; /* Customize heading size */
+    margin: 0;
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+.hero-overlay p {
+    font-size: 1.5em;
+    margin: 10px 0 20px 0; /* Spacing for the paragraph */
+}
+
+.cta-button {
+    background-color: #E1B76F; /* Customize button color */
+    color: #fff; /* Button text color */
+    padding: 12px 24px; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    background-color: #D8745B; /* Change color on hover */
+}
+
+/* Responsive Styles for Hero Section */
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+}
+
+/* Main Container */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -45,97 +126,12 @@ body, html {
     color: #000; /* Text color */
 }
 
-/* Hero Section Styles */
-.hero-container {
-    position: relative;
-    height: 100vh; /* Full height of the viewport */
-    overflow: hidden;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0; /* Video is in the background */
-}
-
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Cover the entire hero area */
-}
-
-.hero-overlay {
-    position: relative;
-    z-index: 1; /* Bring text content above video */
-    color: white; /* Text color */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Optional: semi-transparent background */
-}
-
-.hero-overlay h1 {
-    font-size: 3em; /* Customize heading size */
-    margin: 0;
-    letter-spacing: 2px; /* Spacing between letters */
-}
-
-.hero-overlay p {
-    font-size: 1.5em;
-    margin: 10px 0 20px 0; /* Spacing for the paragraph */
-}
-
-.cta-button {
-    background-color: #E1B76F; /* Customize button color */
-    color: #fff; /* Button text color */
-    padding: 12px 24px; /* Button padding */
-    border: none;
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background 0.3s; /* Smooth hover effect */
-}
-
-.cta-button:hover {
-    background-color: #D8745B; /* Change color on hover */
-}
-@media (max-width: 768px) {
-    .hero-overlay h1 {
-        font-size: 2.5em;
-    }
-
-    .hero-overlay p {
-        font-size: 1.2em;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-    }
-}
-
 /* Project Content Styling */
 .project-content {
     display: grid; /* Use grid for responsive layouts */
     grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
     gap: 20px; /* Space between content blocks */
     margin-bottom: 30px; /* Add space below the section */
-}
-
-/* The main content should take all available space */
-#portfolio {
-    flex: 1 0 auto; /* Ensure it takes up the remaining space */
-}
-
-.project-description {
-    grid-column: span 2; /* Full width for the description */
 }
 
 /* Responsive Adjustments */
@@ -146,16 +142,6 @@ body, html {
 
     .project-description {
         grid-column: span 1; /* Adjust for single column */
-    }
-
-    .hero-media {
-        max-height: 300px; /* Reduce max height on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-media {
-        max-height: 200px; /* Further reduce max height for mobile */
     }
 }
 
@@ -223,7 +209,8 @@ body, html {
 .grid-item:hover .overlay {
     opacity: 1; /* Show overlay on hover */
 }
-/* Style footer to align at the bottom */
+
+/* Footer Styles */
 .footer {
     text-align: center;
     padding: 20px 0; /* Adjust padding as needed */

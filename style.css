@@ -101,9 +101,9 @@ body, html {
 .cta-button {
     font-size: 16px; /* Smaller font size */
     padding: 10px 20px; /* Reduced padding */
-    border: 2px solid #fff; /* Keep the white border */
-    background-color: transparent; /* No background color */
-    color: #fff; /* White text */
+    border: 2px solid #333; /* Keep the white border */
+    background-color: #FFA500; /* Orange background color */
+    color: #333; /* White text */
     text-transform: uppercase; /* Uppercase text for styling */
     text-decoration: none; /* Remove underline */
     cursor: pointer; /* Pointer cursor on hover */

@@ -224,12 +224,23 @@ body, html {
     opacity: 1; /* Show overlay on hover */
 }
 /* Style footer to align at the bottom */
-footer {
-    background-color: #222; /* Darker footer color */
-    color: #fff; /* White text */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Some padding for spacing */
-    width: 100%; /* Full width */
-    margin-top: auto; /* Push footer to bottom */
-    flex-shrink: 0; /* Prevent footer from shrinking */
+.footer {
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Space between icons */
+}
+
+.social-links img {
+    width: 30px; /* Set the icon size */
+    height: 30px; /* Set the icon size */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }

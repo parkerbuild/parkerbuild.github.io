@@ -280,15 +280,25 @@ body, html {
 /* Project Detail Pages */
 .email-preview-container {
     flex: 1;
-    min-width: 45%;
-    padding: 10px;
+    min-width: 60%;
+    max-width: 800px; /* Set a max width for larger screens */
+    padding: 20px; /* Added padding for better spacing */
     text-align: center; /* Center the content */
-    margin: 20px 0; /* Added spacing */
+    margin: 20px auto; /* Center the container horizontally */
 }
 
-.email-preview-image {
+/* Centering the iframe */
+.email-iframe {
+    width: 100%; /* Full width of its container */
+    height: 600px; /* Increased height for better visibility */
+    border: none; /* Remove default iframe border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin: 20px 0; /* Space above and below */
+}
+    .email-preview-image {
     width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Optional: Set a maximum width */
+    max-width: 800px; /* Optional: Set a maximum width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: Rounded corners */
 }
@@ -299,15 +309,20 @@ body, html {
     background-color: #FFF; /* Background color for contrast */
     margin: 40px 0; /* Space above and below */
     border-radius: 8px; /* Rounded corners */
+    max-width: 800px; /* Optional: Limit the width of this section */
+    text-align: center; /* Center the text */
 }
 
 .additional-section h2 {
     margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align heading */
 }
 
 .additional-section p {
     line-height: 1.6; /* Increase line height for readability */
     margin-bottom: 20px; /* Space below the paragraph */
+    text-align: center; /* Center align text */
+    
 }
 
 /* Error Message Styles */

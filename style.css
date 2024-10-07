@@ -152,9 +152,9 @@ body, html {
 /* Project Content Styling */
 .project-content {
     display: grid; /* Use grid for responsive layouts */
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 30px; /* Space between content blocks */
-    margin-bottom: 30px; /* Add space below the section */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible columns */
+    gap: 20px; /* Adjust spacing between items */
+    margin-bottom: 30px; /* Space below the section */
 }
 
 /* Portfolio Grid */
@@ -177,14 +177,30 @@ body, html {
     position: relative;
     overflow: hidden;
     border-radius: 10px; /* Slightly rounded corners */
-    height: 400px; /* Set a height for grid items to make squares larger */
+    height: auto; /* Allow height to adjust based on content */
+    max-height: 300px; /* Limit the maximum height */
+    display: flex; /* Use flexbox for the item */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
 }
 
 .grid-item img {
     width: 100%;
-    height: 100%; /* Cover entire grid item space */
+    height: auto; /* Adjust height to maintain aspect ratio */
     object-fit: cover; /* Ensure the image covers the grid item */
     transition: transform 0.4s ease; /* Smooth scaling effect */
+}
+
+/* Supers Styling */
+.supers {
+    position: absolute; /* Positioning for overlay */
+    bottom: 10px; /* Adjust to position at the bottom */
+    left: 10px; /* Position from the left */
+    color: white; /* Text color for contrast */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px; /* Add padding around the text */
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Hover Effect */

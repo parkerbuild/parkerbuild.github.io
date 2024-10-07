@@ -265,12 +265,24 @@ body, html {
         grid-template-columns: 1fr; /* Single column for smaller screens */
 }
 
-/* Project Detail Pages*/
+
+/* Email iFrame Styling */
+.email-iframe {
+    width: 100%; /* Full width of its container */
+    height: 500px; /* Adjust height as needed */
+    border: none; /* Remove default iframe border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin: 20px 0; /* Space above and below */
+}
+
+/* Project Detail Pages */
 .email-preview-container {
     flex: 1;
     min-width: 45%;
     padding: 10px;
-    text-align: center; /* Center the image */
+    text-align: center; /* Center the content */
+    margin: 20px 0; /* Added spacing */
 }
 
 .email-preview-image {
@@ -280,16 +292,18 @@ body, html {
     border: 1px solid #ddd; /* Optional: Add border for visibility */
 }
 
-.email-description-container {
-    flex: 1;
-    min-width: 45%;
-    padding: 20px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-content {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .email-preview-container, 
+    .email-description-container {
+        min-width: 100%; /* Full width on small screens */
+    }
 }
 
-.email-description-container h3 {
-    font-size: 1.8rem;
-    color: #333;
-}
 
 .email-description-container p {
     font-size: 1rem;

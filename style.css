@@ -263,9 +263,10 @@ body, html {
 @media (max-width: 768px) {
     .project-content {
         grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-   /* Detail Pages*/
-    .email-preview-container {
+}
+
+/* Project Detail Pages*/
+.email-preview-container {
     flex: 1;
     min-width: 45%;
     padding: 10px;

@@ -47,8 +47,8 @@ body, html {
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    background: rgba(0, 0, 0, 0); /* Add a slight dark overlay */
-    padding: 20px; /* Padding to control spacing */
+    background: rgba(0, 0, 0, 0.5); /* Add a slight dark overlay */
+    padding: 40px; /* Increased padding */
 }
 
 .hero-overlay h1 {
@@ -90,12 +90,13 @@ body, html {
     padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s; /* Added transform transition */
     margin-top: 40px; /* Adds space between the button and the paragraph */
 }
 
 .cta-button:hover {
     background-color: #D8745B;
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Responsive Styles for Hero Section */
@@ -263,8 +264,8 @@ body, html {
 @media (max-width: 768px) {
     .project-content {
         grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
 }
-
 
 /* Email iFrame Styling */
 .email-iframe {
@@ -289,24 +290,30 @@ body, html {
     width: 100%; /* Make the image responsive */
     max-width: 400px; /* Optional: Set a maximum width */
     height: auto; /* Maintain aspect ratio */
-    border: 1px solid #ddd; /* Optional: Add border for visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .project-content {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-
-    .email-preview-container, 
-    .email-description-container {
-        min-width: 100%; /* Full width on small screens */
-    }
+/* Additional Section Styling */
+.additional-section {
+    padding: 40px 20px; /* More space around the section */
+    background-color: #FFF; /* Background color for contrast */
+    margin: 40px 0; /* Space above and below */
+    border-radius: 8px; /* Rounded corners */
 }
 
+.additional-section h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
 
-.email-description-container p {
-    font-size: 1rem;
-    color: #555;
+.additional-section p {
+    line-height: 1.6; /* Increase line height for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red; /* Red text for errors */
+    font-weight: bold; /* Make it stand out */
+    margin: 20px 0; /* Space around the error message */
 }
 }

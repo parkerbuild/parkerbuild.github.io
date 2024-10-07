@@ -47,7 +47,7 @@ body, html {
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    background: rgba(0, 0, 0, 0.4); /* Optional: semi-transparent background */
+    background: rgba(0, 0, 0, 0); 
 }
 
 .hero-overlay h1 {
@@ -129,15 +129,15 @@ body, html {
 /* Project Content Styling */
 .project-content {
     display: grid; /* Use grid for responsive layouts */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between content blocks */
+    grid-template-columns: repeat(2, 1fr)); /* 2 */
+    gap: 30px; /* Space between content blocks */
     margin-bottom: 30px; /* Add space below the section */
 }
 
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(2, 1fr)); /* 2 columns */
     gap: 39px; /* Spacing between items */
 }
 
@@ -145,13 +145,14 @@ body, html {
 .grid-item {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 10px; /* Slightly rounded corners*/
+    height: 400px; /* Set a height for grid items to make squares larger */
 }
 
 .grid-item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%; /* Cover entire grid item space */
+    object-fit: cover; /* Ensure the image covers the grid item */
     transition: transform 0.4s ease; /* Smooth scaling effect */
 }
 

@@ -129,39 +129,16 @@ body, html {
 /* Project Content Styling */
 .project-content {
     display: grid; /* Use grid for responsive layouts */
-    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
     gap: 20px; /* Space between content blocks */
     margin-bottom: 30px; /* Add space below the section */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .project-content {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-
-    .project-description {
-        grid-column: span 1; /* Adjust for single column */
-    }
 }
 
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
     gap: 39px; /* Spacing between items */
-}
-
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr; /* Single column for small screens */
-    }
 }
 
 /* Grid Item Styling */
@@ -232,4 +209,11 @@ body, html {
 
 .social-links img:hover {
     transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-content {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
 }

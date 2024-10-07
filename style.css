@@ -63,20 +63,39 @@ body, html {
     max-width: 800px; /* Control text width */
 }
 
+.cta-block {
+    text-align: center;
+    margin: 40px auto; /* Center the block */
+    max-width: 800px;  /* Restrict width */
+    padding: 20px;
+}
+
+.cta-block h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.cta-paragraph {
+    font-size: 1.2em;
+    color: #f1ecd9; /* Use a soft cream color */
+    margin: 15px 0; /* Space around paragraph */
+    line-height: 1.5; /* Adjust line spacing */
+    text-align: center; /* Center align the paragraph */
+}
+
 .cta-button {
-    background-color: #E1B76F; /* Customize button color */
-    color: #fff; /* Button text color */
-    padding: 12px 24px; /* Button padding */
-    border: none;
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2em; /* Adjust font size */
-    transition: background 0.3s; /* Smooth hover effect */
-    margin-top: 20px; /* Space above the button */
+    display: inline-block;
+    background-color: #E1B76F;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-top: 40px; /* Adds space between the button and the paragraph */
 }
 
 .cta-button:hover {
-    background-color: #D8745B; /* Change color on hover */
+    background-color: #D8745B;
 }
 
 /* Responsive Styles for Hero Section */
@@ -205,7 +224,7 @@ body, html {
     text-align: center;
     padding: 20px 0; /* Adjust padding as needed */
     width: 100%; /* Full width */
-    margin-top: 30px; /* Increase this value for more space */
+    margin-top: 50px; /* Increase this value for more space */
 }
 
 .social-links {

@@ -55,19 +55,45 @@
         color: #D2B48C; /* Yellow color for contrast */
     }
 
-    /* New CTA Block */
-    .cta-block {
-        padding: 20px 0; /* Add some padding for spacing */
-        background-color: #ffffff; /* White background */
-        text-align: center; /* Center the content */
-        margin-top: 20px; /* Space above the block */
-    }
+   /* New CTA Block */
+.cta-block {
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 400px; /* Set a fixed height for the block */
+    padding: 40px; /* Add padding around the block */
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center the content */
+    margin-top: 20px; /* Space above the block */
+}
 
-    .cta-block h2 {
-        font-size: 2rem; /* Adjust size as needed */
-        color: #333; /* Dark color for contrast */
-        margin: 10px 0;
-    }
+.cta-block h2 {
+    font-size: 2rem; /* Adjust size as needed */
+    color: #333; /* Dark color for contrast */
+    margin: 0 0 20px; /* Space below the heading */
+}
+
+.cta-block p {
+    font-size: 1.25rem; /* Size of the paragraph text */
+    color: #666; /* Optional: Slightly lighter color for contrast */
+    margin: 0 0 30px; /* Space below the paragraph */
+}
+
+.cta-button {
+    background-color: #E1B76F; /* Customize button color */
+    color: #fff; /* Button text color */
+    padding: 12px 24px; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    background-color: #D8745B; /* Change color on hover */
+}
+
 
     .portfolio {
         padding: 50px 0; /* Add some padding for the portfolio section */

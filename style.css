@@ -1,7 +1,7 @@
 /* Basic Styles */
 body, html {
-    height: 100%; /* Full height for the body */
-    margin: 0; /* Remove any default margin */
+    height: 100%;
+    margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #F5F5F5;
@@ -10,8 +10,8 @@ body, html {
 /* Hero Section Styles */
 .hero-container {
     position: relative;
-    height: 100vh; /* Full height of the viewport */
-    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -30,24 +30,24 @@ body, html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* Cover the entire hero area */
-    z-index: 0; /* Ensure video is behind the overlay */
+    object-fit: cover;
+    z-index: 0;
 }
 
 .hero-overlay {
-    position: absolute; /* Change to absolute to position relative to .hero-container */
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    height: 100%;
     z-index: 1; /* Bring text content above video */
-    color: white; /* Text color */
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    background: rgba(0, 0, 0, 0); 
+    background: rgba(0, 0, 0, 0);
 }
 
 .hero-overlay h1 {
@@ -61,14 +61,21 @@ body, html {
     margin: 10px 0 20px 0; /* Spacing for the paragraph */
 }
 
+/* New Paragraph Style for Slogan */
+.hero-overlay .slogan {
+    font-size: 1.2em;
+    margin: 20px 0; /* Space between the headline and CTA button */
+    color: #E1B76F; /* Optional: Brand color for slogan */
+}
+
 .cta-button {
-    background-color: #E1B76F; /* Customize button color */
-    color: #fff; /* Button text color */
-    padding: 12px 24px; /* Button padding */
+    background-color: #E1B76F;
+    color: #fff;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background 0.3s; /* Smooth hover effect */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
@@ -111,54 +118,54 @@ body, html {
 }
 
 .navbar {
-    list-style: none; /* Removes bullet points */
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .navbar li {
-    display: inline; /* Displays items in a line */
-    margin-left: 20px; /* Space between menu items */
+    display: inline;
+    margin-left: 20px;
 }
 
 .navbar a {
-    text-decoration: none; /* Removes underline */
-    color: #000; /* Text color */
+    text-decoration: none;
+    color: #000;
 }
 
 /* Project Content Styling */
 .project-content {
-    display: grid; /* Use grid for responsive layouts */
-    grid-template-columns: repeat(2, 1fr)); /* 2 */
-    gap: 30px; /* Space between content blocks */
-    margin-bottom: 30px; /* Add space below the section */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Fixed 2-column grid */
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)); /* 2 columns */
-    gap: 39px; /* Spacing between items */
+    grid-template-columns: repeat(2, 1fr); /* Fixed 2-column grid */
+    gap: 39px;
 }
 
 /* Grid Item Styling */
 .grid-item {
     position: relative;
     overflow: hidden;
-    border-radius: 10px; /* Slightly rounded corners*/
-    height: 400px; /* Set a height for grid items to make squares larger */
+    border-radius: 10px;
+    height: 400px;
 }
 
 .grid-item img {
     width: 100%;
-    height: 100%; /* Cover entire grid item space */
-    object-fit: cover; /* Ensure the image covers the grid item */
-    transition: transform 0.4s ease; /* Smooth scaling effect */
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
 /* Hover Effect */
 .grid-item:hover img {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 /* Overlay for Project Media */
@@ -168,13 +175,13 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
-    opacity: 0; /* Start as invisible */
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.4s ease; /* Smooth transition */
+    transition: opacity 0.4s ease;
 }
 
 .overlay h2 {
@@ -185,36 +192,36 @@ body, html {
 
 /* Hover State for Overlay */
 .grid-item:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1;
 }
 
 /* Footer Styles */
 .footer {
     text-align: center;
-    padding: 20px 0; /* Adjust padding as needed */
-    width: 100%; /* Full width */
-    margin-top: 30px; /* Increase this value for more space */
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .social-links {
     display: flex;
-    justify-content: center; /* Center the icons */
-    gap: 20px; /* Space between icons */
+    justify-content: center;
+    gap: 20px;
 }
 
 .social-links img {
-    width: 30px; /* Set the icon size */
-    height: 30px; /* Set the icon size */
-    transition: transform 0.3s; /* Add a hover effect */
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
 }
 
 .social-links img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .project-content {
+    .project-content, .portfolio-grid {
         grid-template-columns: 1fr; /* Single column for smaller screens */
     }
 }

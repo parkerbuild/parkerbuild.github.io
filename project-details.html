@@ -3,59 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Details - Project 1</title>
-    <link rel="stylesheet" href="details.css"> <!-- Link to new CSS file here -->
+    <link rel="stylesheet" href="details.css">
+    <title>Project Details</title>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="your-logo.png" alt="ParkerBuild Logo" class="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="path/to/your-logo.png" alt="Your Logo" class="logo">
+        <h1>Working On This Page NOW!</h1>
     </header>
 
-    <section class="project-details">
-        <div class="intro">
-            <h1>Project Title</h1>
-            <p>Project description goes here. A brief overview of what this project entails, the goals, and the outcomes achieved.</p>
+    <div class="media-container">
+        <!-- Landscape Video Embed -->
+        <div class="media">
+            <iframe src="https://player.vimeo.com/video/your_video_id_landscape" class="video-embed" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
-        <div class="media-container">
-            <div class="video-item">
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video-item">
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <!-- Vertical Video Embed -->
+        <div class="media">
+            <iframe src="https://player.vimeo.com/video/your_video_id_vertical" class="video-embed" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
-        <!-- Embedded Email Sign-Up Section -->
-        <div class="email-signup">
-            <h2>Subscribe to Our Newsletter</h2>
-            <iframe src="https://your-email-signup-form-url.com" class="email-iframe" title="Email Signup Form"></iframe>
+        <!-- Landscape Image -->
+        <div class="media">
+            <img src="path/to/landscape-image.jpg" alt="Landscape Image" class="image-landscape">
         </div>
 
-        <div class="project-text">
-            <h2>Project Background</h2>
-            <p>This section provides more details on the project's background, the challenges faced, and how solutions were implemented.</p>
+        <!-- Portrait Image -->
+        <div class="media">
+            <img src="path/to/portrait-image.jpg" alt="Portrait Image" class="image-portrait">
         </div>
-    </section>
+
+        <!-- PDF Embed -->
+        <div class="media">
+            <iframe src="path/to/your-pdf.pdf" class="pdf-iframe"></iframe>
+        </div>
+
+        <!-- Email iframe -->
+        <div class="media">
+            <iframe src="path/to/your-email-iframe.html" class="email-iframe"></iframe>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 ParkerBuild. All Rights Reserved.</p>
+        <p>&copy; 2024. All rights reserved.</p>
     </footer>
 </body>
 </html>
-

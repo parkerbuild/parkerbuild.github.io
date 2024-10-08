@@ -1,89 +1,70 @@
-/* Maintain your base styles */
-body, h1, p {
+/* Basic Reset */
+body, h1, p, iframe {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
 }
 
+/* Overall Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header Styling */
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: #fff;
+    margin-bottom: 20px;
 }
 
-header .logo {
-    max-width: 150px;
-    margin-bottom: 15px;
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
 }
 
+/* Media Container Styling */
 .media-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;  /* Adjust gap between media elements */
-    padding: 30px;
-    margin: 0 auto;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .media {
-    width: calc(33.33% - 20px); /* Equally space the items within the row */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     position: relative;
-    margin: 20px 0;
+    flex: 1 1 calc(33.33% - 40px); /* Responsive sizing for media items */
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-/* Remove the white box shadow */
-.media iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;  /* Optional: smooth rounded corners */
+.media:hover {
+    transform: scale(1.05); /* Enhanced hover effect */
 }
 
-/* Modernize the display */
-.media {
-    border: none;
-    background: none;  /* Remove background */
-    margin: 0;  /* Remove margin around video */
-}
-
-.video-embed, .pdf-iframe {
-    transition: transform 0.3s ease-in-out;  /* Add transition for hover effect */
-}
-
-/* Hover effect to give videos a modern look */
-.media:hover .video-embed {
-    transform: scale(1.05);  /* Slightly zoom the video on hover */
-}
-
-/* PDF Embed Styling */
+/* Video and PDF Styling */
+.video-embed,
 .pdf-iframe {
     width: 100%;
-    height: 500px;
-    pointer-events: none;  /* Optional: Prevent user from interacting with the PDF */
-    border-radius: 10px;
+    height: 500px; /* Set height to a larger value */
+    border: none;
+    display: block;
 }
 
-/* Responsive Layout */
-@media screen and (max-width: 768px) {
-    .media {
-        width: calc(50% - 10px); /* Half-width for smaller screens */
-    }
+/* Remove Vimeo Controls */
+.video-embed[src*="vimeo.com"] {
+    border: none;
 }
 
-@media screen and (max-width: 480px) {
-    .media {
-        width: 100%; /* Full-width for mobile */
-    }
+/* Custom Styles for PDF Embeds */
+.pdf-iframe {
+    height: 700px; /* Larger height for PDFs */
 }
 
+/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
     text-align: center;
-    padding: 15px 0;
+    margin-top: 20px;
 }

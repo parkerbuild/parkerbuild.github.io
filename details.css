@@ -60,7 +60,8 @@ header {
 
 /* Custom Styles for PDF Embeds */
 .pdf-iframe {
-    height: 700px; /* Larger height for PDFs */
+     width: 600px;    
+     height: 400px; /* Larger height for PDFs */
 }
 
 /* Footer */

@@ -59,8 +59,8 @@ header {
 
 /* PDF Styles for PDF Embeds */
 .pdf-iframe {
-    width: 80vw; /* Wider container for better visibility */
-    height: 600px; /* Adjust height to fit landscape format */
+    width: 100vw; /* Wider container for better visibility */
+    height: 800px; /* Adjust height to fit landscape format */
     border: none;
     display: block;
     margin: 0 auto;

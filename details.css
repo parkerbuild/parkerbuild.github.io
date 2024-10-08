@@ -151,3 +151,57 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.4s ease-in-out; /* Smooth fade */
+}
+
+.image-text-container:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+
+/* Styling for Text on Left and Image on Right */
+.text-image-section {
+    display: flex;                   /* Flexbox for side-by-side layout */
+    justify-content: space-between;  /* Space between text and image */
+    align-items: center;             /* Vertically align items */
+    gap: 20px;                       /* Space between text and image */
+    margin: 40px 0;                  /* Add some space above and below the section */
+}
+
+/* Text Container Styles */
+.text-container {
+    flex: 1;                         /* Allow text to take available space */
+    max-width: 600px;                /* Set a maximum width */
+}
+
+/* Image Container Styles */
+.image-container {
+    flex: 1;                         /* Allow image to take available space */
+    display: flex;                   /* Center image in its container */
+    justify-content: center;
+}
+
+/* Image Styling */
+.right-aligned-image {
+    max-width: 100%;                 /* Ensure the image doesn't overflow */
+    width: 400px;                    /* Set a default width */
+    height: auto;                    /* Maintain aspect ratio */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .text-image-section {
+        flex-direction: column;      /* Stack items on smaller screens */
+        text-align: center;          /* Center-align text */
+    }
+
+    .text-container, .image-container {
+        max-width: 100%;             /* Full width for text and image */
+    }
+
+    .right-aligned-image {
+        width: 80%;                  /* Scale down image size */
+        margin: 20px 0;              /* Add spacing between text and image */
+    }
+}

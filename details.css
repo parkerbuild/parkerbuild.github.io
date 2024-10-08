@@ -44,9 +44,8 @@ header {
     transform: scale(1.05); /* Enhanced hover effect */
 }
 
-/* Video and PDF Styling */
-.video-embed,
-.pdf-iframe {
+/* Video Styling */
+.video-embed {
     width: 100%;
     height: 500px; /* Set height to a larger value */
     border: none;
@@ -58,10 +57,13 @@ header {
     border: none;
 }
 
-/* Custom Styles for PDF Embeds */
+/* PDF Styles for PDF Embeds */
 .pdf-iframe {
-     width: 600px;    
-     height: 400px; /* Larger height for PDFs */
+    width: 80vw; /* Wider container for better visibility */
+    height: 600px; /* Adjust height to fit landscape format */
+    border: none;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Footer */

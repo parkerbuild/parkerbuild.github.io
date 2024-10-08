@@ -170,8 +170,8 @@ footer {
 /* Text Container */
 .text-container {
     flex: 1;                         /* Allow text to take available space */
-    max-width: 600px;                /* Set maximum width for readability */
-    margin-right: 20px;              /* Space between text and image */
+    max-width: 400px;                /* Set maximum width for readability */
+    margin-right: 10px;              /* Space between text and image */
 }
 
 /* Image Container */

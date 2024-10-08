@@ -96,9 +96,9 @@ footer {
 }
 
 .static-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 50%;
+    height: 50%;
+
 }
 
 .hover-text {

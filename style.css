@@ -47,7 +47,7 @@ body, html {
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    background: rgba(0, 0, 0, 0.5); /* Add a slight dark overlay */
+    background: rgba(0, 0, 0, 0); /* Add a slight dark overlay */
     padding: 40px; /* Increased padding */
 }
 

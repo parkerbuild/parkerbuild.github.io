@@ -195,3 +195,39 @@ footer {
         max-width: 90%;              /* Further expand on small mobile screens */
     }
 }
+/* Centered Square Image Container */
+.centered-image-container {
+    display: flex;                   /* Use flexbox for centering */
+    justify-content: center;         /* Horizontally center the image */
+    align-items: center;             /* Vertically center if needed */
+    width: 100%;                     /* Full width of the page */
+    margin: 20px auto;               /* Add margin for spacing */
+}
+
+/* Styling for the Square Image */
+.centered-image {
+    width: 300px;                    /* Set a smaller size for the image */
+    height: auto;                    /* Maintain aspect ratio */
+    border-radius: 8px;              /* Optional: rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for effect */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover Effect for Image */
+.centered-image:hover {
+    transform: scale(1.05);          /* Slightly enlarge the image on hover */
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .centered-image {
+        width: 200px;                /* Adjust image size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .centered-image {
+        width: 150px;                /* Adjust image size for mobile */
+    }
+}
+

@@ -237,3 +237,26 @@ footer {
         width: 150px;                /* Adjust image size for mobile */
     }
 }
+
+/* Centering the Two-Column Component */
+.two-column-component {
+    display: flex;                 /* Use flexbox for layout */
+    justify-content: center;       /* Center the entire component */
+    align-items: center;           /* Align items vertically */
+    max-width: 1200px;            /* Max width for larger screens */
+    margin: 0 auto;               /* Centering with auto margins */
+    padding: 20px;                /* Space inside the component */
+}
+
+/* Left Text Styling */
+.left-text {
+    flex: 1;                      /* Allow text to take available space */
+    text-align: center;           /* Center the text */
+}
+
+/* Right Image Styling */
+.right-image {
+    flex: 1;                      /* Allow image to take available space */
+    max-width: 100%;             /* Make sure it doesn’t exceed the container */
+    height: auto;                 /* Maintain aspect ratio */
+}

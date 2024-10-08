@@ -1,3 +1,37 @@
+/* Resetting Basic Styles */
+body, h1, p, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Sets a clean font */
+    background-color: #ffffff;        /* White background */
+    padding: 20px;                    /* Adds space around the page */
+}
+
+/* Header Styling */
+header {
+    text-align: center;    /* Centers the header text */
+    margin-bottom: 20px;   /* Adds space below the header */
+}
+
+.logo {
+    width: 150px;          /* Makes the logo smaller */
+    margin-bottom: 10px;   /* Adds space below the logo */
+}
+
+/* Media Container Styling */
+.media-container {
+    display: flex;             /* Arranges items in a row */
+    flex-wrap: wrap;           /* Wraps items on smaller screens */
+    justify-content: space-around; /* Adds space between items */
+    gap: 20px;                 /* Space between items */
+    margin-bottom: 40px;       /* Adds space below the container */
+}
+
 /* Basic Reset */
 body, h1, p, iframe {
     margin: 0;

@@ -160,33 +160,30 @@ footer {
     opacity: 1; /* Show text on hover */
 }
 
-/* Styling for Text on Left and Image on Right */
+/* CSS for Component 2: Text on Left, Image on Right */
 .text-image-section {
     display: flex;                   /* Flexbox for side-by-side layout */
-    justify-content: space-between;  /* Space between text and image */
-    align-items: center;             /* Vertically align items */
-    gap: 20px;                       /* Space between text and image */
-    margin: 40px 0;                  /* Add some space above and below the section */
+    align-items: center;             /* Vertically center items */
+    margin: 20px 0;                 /* Space around the section */
 }
 
-/* Text Container Styles */
+/* Text Container */
 .text-container {
     flex: 1;                         /* Allow text to take available space */
-    max-width: 600px;                /* Set a maximum width */
+    max-width: 600px;                /* Set maximum width for readability */
+    margin-right: 20px;              /* Space between text and image */
 }
 
-/* Image Container Styles */
+/* Image Container */
 .image-container {
-    flex: 1;                         /* Allow image to take available space */
-    display: flex;                   /* Center image in its container */
-    justify-content: center;
+    flex: 0 0 auto;                 /* Fixes width of image */
 }
 
-/* Image Styling */
+/* Right-Aligned Image Styling */
 .right-aligned-image {
-    max-width: 100%;                 /* Ensure the image doesn't overflow */
-    width: 400px;                    /* Set a default width */
-    height: auto;                    /* Maintain aspect ratio */
+    max-width: 100%;                /* Ensure the image fits within its container */
+    width: 400px;                   /* Set a specific width for the image */
+    height: auto;                   /* Maintain aspect ratio */
 }
 
 /* Responsive Adjustments */

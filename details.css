@@ -5,6 +5,22 @@ body, h1, p, iframe {
     box-sizing: border-box;
 }
 
+/*Text Project Text Styling*/
+.project-description {
+    margin: 20px 0; /* Adjust spacing as needed */
+    text-align: center; /* Center the text */
+}
+
+.project-description h2 {
+    font-size: 24px; /* Adjust the headline size */
+    margin-bottom: 10px; /* Space below the headline */
+}
+
+.project-description p {
+    font-size: 16px; /* Adjust the paragraph text size */
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the paragraph */
+}
 /* Overall Page Styling */
 body {
     font-family: 'Arial', sans-serif;

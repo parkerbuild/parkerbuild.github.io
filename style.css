@@ -150,6 +150,36 @@ body, html {
     color: #000; /* Text color */
 }
 
+/* Header Navigation Styling */
+.header-nav {
+    display: flex; /* Layout the nav items horizontally */
+    justify-content: space-between; /* Spread out the items */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px; /* Add padding for space around items */
+    background-color: #6E5C4F; /* Background color for contrast */
+}
+
+.nav-item {
+    margin: 0 15px; /* Space between the nav items */
+}
+
+.nav-item a {
+    color: #F1ECD9; /* Soft cream color for text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 10px; /* Padding around text */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.nav-item a:hover {
+    color: #E1B76F; /* Change color on hover */
+}
+
+.header-logo {
+    font-size: 1.5em; /* Adjust logo size */
+    color: #F1ECD9; /* Logo color */
+}
+
 /* Project Content Styling */
 .project-content {
     display: grid; /* Use grid for responsive layouts */

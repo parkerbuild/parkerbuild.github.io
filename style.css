@@ -331,4 +331,37 @@ body, html {
     font-weight: bold; /* Make it stand out */
     margin: 20px 0; /* Space around the error message */
 }
+/* Two column block details page*/
+.two-column-block {
+    display: flex; /* Use flexbox for a two-column layout */
+    margin: 20px 0; /* Add some margin around the block */
+}
+
+.column {
+    flex: 1; /* Make each column take up equal space */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.column-image img,
+.column-image video {
+    max-width: 100%; /* Ensure the image/video fits within the column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.column-text {
+    display: flex;
+    flex-direction: column; /* Stack heading and paragraph vertically */
+    justify-content: center; /* Center the content vertically */
+}
+
+.column-text h2 {
+    font-size: 1.5rem; /* Adjust as necessary */
+    margin-bottom: 10px; /* Space between headline and body */
+}
+
+.column-text p {
+    font-size: 1rem; /* Adjust as necessary */
+    line-height: 1.5; /* Add line height for readability */
+}
 }

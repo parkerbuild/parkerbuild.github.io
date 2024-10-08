@@ -260,3 +260,16 @@ footer {
     max-width: 100%;             /* Make sure it doesn’t exceed the container */
     height: auto;                 /* Maintain aspect ratio */
 }
+
+.landscape-image-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center horizontally */
+    max-width: 100%;    /* Ensure responsiveness */
+}
+
+.landscape-image {
+    max-width: 100%;    /* Limit width */
+    height: auto;       /* Maintain aspect ratio */
+}

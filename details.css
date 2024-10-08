@@ -1,5 +1,60 @@
 /* details.css */
+
 body {
-  background-color: #f4f4f4; /* Test style */
+    background-color: #f4f4f4; /* Light background color */
+    font-family: Arial, sans-serif; /* Default font */
+    margin: 0;
+    padding: 20px;
 }
 
+h1 {
+    text-align: center; /* Center the main title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.media-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 10px; /* Space between media items */
+    justify-content: center; /* Center media items */
+}
+
+.media {
+    flex: 1 1 300px; /* Flexible basis for responsiveness */
+    max-width: 100%; /* Prevent overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+.media iframe {
+    width: 100%; /* Full width for iframes */
+    border: none; /* Remove border */
+}
+
+.image-portrait {
+    width: 100%; /* Adjust for portrait images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-landscape {
+    width: 100%; /* Adjust for landscape images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pdf-iframe {
+    height: 400px; /* Height for PDFs */
+}
+
+.email-iframe {
+    height: 600px; /* Adjust height for email iframe */
+    width: 100%; /* Full width for the email iframe */
+    border: none; /* Remove border */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Space above footer */
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #555; /* Subtle text color */
+}

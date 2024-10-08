@@ -29,7 +29,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .media {
@@ -60,7 +60,7 @@ header {
 
 /* PDF Styles for PDF Embeds */
 .pdf-iframe {
-    width: 1200px; /* Wider container for better visibility */
+    width: 800px; /* Wider container for better visibility */
     height: 800px; /* Adjust height to fit landscape format */
     border: none;
     display: block;
@@ -94,15 +94,15 @@ footer {
 .image-text-container {
     position: relative;
     width: 100%; /* Adjust to fit within the media container */
-    max-width: 300px; /* Max width to match the media */
+    max-width: 800px; /* Max width to match the media */
     height: auto; /* Automatic height */
     overflow: hidden; /* Prevent text overflow */
     border-radius: 8px; /* Optional: rounded corners */
 }
 
 .static-image {
-    width: 1080px; 
-    height: 1080px; /* Maintain aspect ratio */
+    width: 1200px; 
+    height: 1200px; /* Maintain aspect ratio */
 }
 
 .hover-text {

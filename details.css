@@ -159,3 +159,39 @@ footer {
 .image-text-container:hover .hover-text {
     opacity: 1; /* Show text on hover */
 }
+
+/* Centered Landscape Image Container */
+.landscape-image-container {
+    display: flex;                   /* Use flexbox for centering */
+    justify-content: center;         /* Horizontally center the image */
+    align-items: center;             /* Vertically center if needed */
+    width: 100%;                     /* Full width of the page */
+    margin: 20px auto;               /* Center the container itself */
+}
+
+/* Landscape Image Styling */
+.landscape-image {
+    max-width: 60%;                  /* Set the maximum width for the image */
+    height: auto;                    /* Maintain aspect ratio */
+    border-radius: 8px;              /* Optional: rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover Effect for Landscape Image */
+.landscape-image:hover {
+    transform: scale(1.05);          /* Slightly enlarge the image on hover */
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .landscape-image {
+        max-width: 80%;              /* Increase the image width on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .landscape-image {
+        max-width: 90%;              /* Further expand on small mobile screens */
+    }
+}

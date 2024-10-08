@@ -101,8 +101,8 @@ footer {
 }
 
 .static-image {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
+    width: 1080px; 
+    height: 1080px; /* Maintain aspect ratio */
 }
 
 .hover-text {

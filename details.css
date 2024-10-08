@@ -1,67 +1,89 @@
-/* details.css */
-body {
+/* Maintain your base styles */
+body, h1, p {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    color: #fff;
 }
 
-.logo {
-    max-width: 150px; /* Adjust as needed */
-}
-
-h1 {
-    margin: 20px 0;
-    font-size: 2.5em;
-    color: #333333;
+header .logo {
+    max-width: 150px;
+    margin-bottom: 15px;
 }
 
 .media-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    gap: 20px; /* Space between media items */
+    flex-wrap: wrap;
+    gap: 30px;  /* Adjust gap between media elements */
+    padding: 30px;
+    margin: 0 auto;
 }
 
 .media {
-    flex: 1 1 300px; /* Allow for flexibility and responsiveness */
-    max-width: 1200px; /* Limit max size */
-    background-color: #ffffff;
-    border-radius: 8px;
+    width: calc(33.33% - 20px); /* Equally space the items within the row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 20px 0;
 }
 
-.video-embed {
+/* Remove the white box shadow */
+.media iframe {
     width: 100%;
-    height: 500px; /* Adjust as needed */
+    height: 100%;
     border: none;
+    border-radius: 10px;  /* Optional: smooth rounded corners */
 }
 
-.image-landscape,
-.image-portrait {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
-
-.pdf-iframe,
-.email-iframe {
-    width: 100%;
-    height: 400px; /* Adjust as needed */
+/* Modernize the display */
+.media {
     border: none;
+    background: none;  /* Remove background */
+    margin: 0;  /* Remove margin around video */
+}
+
+.video-embed, .pdf-iframe {
+    transition: transform 0.3s ease-in-out;  /* Add transition for hover effect */
+}
+
+/* Hover effect to give videos a modern look */
+.media:hover .video-embed {
+    transform: scale(1.05);  /* Slightly zoom the video on hover */
+}
+
+/* PDF Embed Styling */
+.pdf-iframe {
+    width: 100%;
+    height: 500px;
+    pointer-events: none;  /* Optional: Prevent user from interacting with the PDF */
+    border-radius: 10px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .media {
+        width: calc(50% - 10px); /* Half-width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .media {
+        width: 100%; /* Full-width for mobile */
+    }
 }
 
 footer {
+    background-color: #222;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    padding: 15px 0;
 }

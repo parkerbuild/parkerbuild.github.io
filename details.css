@@ -5,7 +5,6 @@ body, h1, p, iframe {
     box-sizing: border-box;
 }
 
-
 /* Overall Page Styling */
 body {
     font-family: 'Arial', sans-serif;
@@ -41,6 +40,7 @@ header {
     transition: transform 0.3s ease;
 }
 
+/* Hover Effect for Media */
 .media:hover {
     transform: scale(1.05); /* Enhanced hover effect */
 }
@@ -66,7 +66,8 @@ header {
     display: block;
     margin: 0 auto;
 }
-/*Text Project Text Styling*/
+
+/* Text Project Text Styling */
 .project-description {
     margin: 10px 0; /* Adjust spacing as needed */
     text-align: center; /* left Align text */
@@ -82,23 +83,26 @@ header {
     max-width: 800px; /* Limit the width for better readability */
     margin: 0 auto; /* Center the paragraph */
 }
+
 /* Footer */
 footer {
     text-align: center;
     margin-top: 20px;
 }
-.flip-container {
+
+/* Image and Text Overlay */
+.image-text-container {
     position: relative;
-    width: 300px;
-    height: 200px;
-    margin: 20px auto;
+    width: 100%; /* Adjust to fit within the media container */
+    max-width: 300px; /* Max width to match the media */
+    height: auto; /* Automatic height */
     overflow: hidden; /* Prevent text overflow */
+    border-radius: 8px; /* Optional: rounded corners */
 }
 
 .static-image {
-    width: 50%;
-    height: 50%;
-
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .hover-text {
@@ -118,6 +122,6 @@ footer {
     transition: opacity 0.4s ease-in-out; /* Smooth fade */
 }
 
-.flip-container:hover .hover-text {
+.image-text-container:hover .hover-text {
     opacity: 1; /* Show text on hover */
 }

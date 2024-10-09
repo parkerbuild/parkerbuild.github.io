@@ -150,7 +150,7 @@ footer {
     opacity: 0; /* Hidden by default */
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
     text-align: center;
     padding: 10px;
     transition: opacity 0.4s ease-in-out; /* Smooth fade */
@@ -251,8 +251,13 @@ footer {
 /* Left Text Styling */
 .left-text {
     flex: 1;                      /* Allow text to take available space */
-    text-align: center;           /* Center the text */
+    text-align: center;           /* Center the text horizontally */
+    margin: 0 auto;               /* Center the text container itself */
+    display: flex;                /* Use flexbox for centering */
+    justify-content: center;      /* Horizontally center content */
+    align-items: center;          /* Vertically center content */
 }
+
 
 /* Right Image Styling */
 .right-image {
@@ -276,8 +281,8 @@ footer {
 /* Container for the image grid */
 .image-grid {
     display: flex;                  /* Use flexbox for layout */
-    justify-content: space-around;  /* Space evenly between images */
-    flex-wrap: wrap;                /* Ensure images wrap on smaller screens */
+    justify-content: center;  /* Center the images */
+    flex-wrap: nowrap;                /* Force a single row layout */
     gap: 20px;                      /* Add space between images */
     margin: 20px auto;              /* Center the entire grid */
     max-width: 1200px;              /* Set a max width for the grid */
@@ -285,9 +290,9 @@ footer {
 
 /* Styling individual images within the grid */
 .image-grid img {
-    width: 50%;                     /* Reduce image width by 50% */
+    width: 25%;                     /* Reduce image width by 50% */
     height: auto;                   /* Maintain aspect ratio */
-    max-width: 300px;               /* Set a max-width to avoid being too large */
+    max-width: 200px;               /* Set a max-width to avoid being too large */
     border-radius: 8px;             /* Optional: Add rounded corners */
     transition: transform 0.3s ease;/* Optional: Add smooth zoom effect */
 }

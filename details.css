@@ -69,6 +69,13 @@ header {
     display: block;
 }
 
+/* PDF Heading Styling */
+.pdf-heading {
+    font-size: 24px;  /* Adjust the size of the heading */
+    font-weight: bold;
+    margin-bottom: 20px;  /* Adds space below the heading */
+    color: #333;  /* You can change this to your preferred color */
+}
 /* PDF Styling */
 .pdf-iframe {
     width: 100%; /* Adjusted to fit the container */

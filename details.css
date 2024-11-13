@@ -69,18 +69,11 @@ header {
     display: block;
 }
 
-/* PDF Heading Styling */
-.pdf-heading {
-    font-size: 24px;  /* Adjust the size of the heading */
-    font-weight: bold;
-    margin-bottom: 20px;  /* Adds space below the heading */
-    color: #333;  /* You can change this to your preferred color */
-}
 /* PDF Styling */
 .pdf-iframe {
-    width: 80%; /* Adjusted width to take up more */
+    width: 100%; /* Adjusted to fit the container */
     max-width: 2080px; /* Added max-width for better layout */
-    height: 1000px;  /* Increased height for better legibility */
+    height: 800px;
     border: none;
     display: block;
     margin: 0 auto;
@@ -277,119 +270,7 @@ footer {
     padding-top: 30px;   /* Add more padding above the text */
     padding-bottom: 10px; /* Add less padding below the text */
 }
-/* Side-by-side Square Video Container Styling */
-.square-video-container {
-    display: flex;
-    justify-content: space-between; /* Ensures space between the videos */
-    gap: 20px; /* Space between video squares */
-    margin-bottom: 40px;
-}
 
-.square-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;    
-}
-
-.square-video:hover {
-    transform: scale(1.05);
-}
-
-/* Video Styling */
-.square-video-embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Landscape Video Section */
-.landscape-video-section {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.landscape-video-container {
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.landscape-video {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-/* Scrollable Media Container */
-.scrollable-media-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 10px;
-}
-
-.media-wrapper {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
-}
-
-/* Video Embed Styling */
-.video-embed {
-    width: 100%;
-    padding-bottom: 100%; /* Keeps the video square */
-    height: 0;
-    position: relative;
-    border: none;
-}
-
-.video-embed iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Square Image Styling */
-.square-image {
-    width: 100%;
-    padding-bottom: 100%; /* Keeps the image square */
-    height: 0;
-    object-fit: cover;
-    position: relative;
-}
-
-/* Landscape Video Section */
-.landscape-video-section {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.landscape-video-container {
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.landscape-video {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 /* Banner Section */
 .banner-section {

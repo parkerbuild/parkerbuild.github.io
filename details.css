@@ -78,9 +78,9 @@ header {
 }
 /* PDF Styling */
 .pdf-iframe {
-    width: 100%; /* Adjusted to fit the container */
+    width: 80%; /* Adjusted width to take up more */
     max-width: 2080px; /* Added max-width for better layout */
-    height: 800px;
+    height: 1000px;  /* Increased height for better legibility */
     border: none;
     display: block;
     margin: 0 auto;

@@ -265,3 +265,9 @@ footer {
 .image-grid img:hover {
     transform: scale(1.05);
 }
+
+.event-description {
+    padding-top: 30px;   /* Add more padding above the text */
+    padding-bottom: 10px; /* Add less padding below the text */
+}
+

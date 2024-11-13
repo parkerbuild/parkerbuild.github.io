@@ -50,26 +50,124 @@
         .contact-info span {
             font-weight: bold;
         }
+        /* Contact Page Styling */
+        .contact-page {
+            background-color: rgba(0, 0, 0, 0.1); /* Transparent background */
+            padding: 50px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Image and Text Section */
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 50px;
+            background: url('IMG_0403.png') no-repeat center center/cover;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.3); /* Transparent background with slight darkening */
+        }
+
+        .contact-section .image-wrapper {
+            flex: 1;
+            max-width: 40%;
+            padding: 20px;
+        }
+
+        .contact-section .image-wrapper img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-section .text-wrapper {
+            flex: 1;
+            max-width: 60%;
+            padding: 20px;
+            color: #333;
+        }
+
+        .contact-section .text-wrapper h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-section .text-wrapper p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 30px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info .contact-item {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .contact-info .contact-item a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .contact-info .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .contact-section .image-wrapper, .contact-section .text-wrapper {
+                max-width: 100%;
+            }
+
+            .contact-info {
+                padding: 20px;
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Contact Section with Background and Info -->
-<section class="contact-section">
-    <div class="contact-content">
-        <div class="contact-image">
-            <img src="MyPhoto.png" alt="Photo of Me" />
+    <section class="contact-section">
+        <div class="contact-wrapper">
+            <div class="image-wrapper">
+                <img src="MyPhoto.png" alt="Photo of Me" />
+            </div>
+            <div class="text-wrapper">
+                <h2>My Story</h2>
+                <p>
+                    I was fortunate enough to run point on all digital production at Rodgers Townsend, a local powerhouse and Omnicom network shop with over 20 million in revenue. At my previous agency, I specialized in creating custom digital solutions like websites and applications designed to help farmers with critical tasks such as tracking planting schedules, spray timings, and crop performance by region. I bring a unique balance of creative problem-solving, deep production expertise, and strong client relationships to new projects and challenges. 
+                    Outside of work you will likely find me putting together a puzzle, reading, or teaching myself bass guitar. Or, I'm probably solving a new challenge -- like building a website!
+                </p>
+            </div>
         </div>
-        <div class="contact-info">
-            <h2>My Story</h2>
-            <p>
-                I was fortunate enough to run point on all digital production at Rodgers Townsend, a local powerhouse and Omnicom network shop with over 20 million in revenue. At my previous agency, I specialized in creating custom digital solutions like websites and applications designed to help farmers with critical tasks such as tracking planting schedules, spray timings, and crop performance by region. I bring a unique balance of creative problem-solving, deep production expertise, and strong client relationships to new projects and challenges. 
-                Outside of work you will likely find me putting together a puzzle, reading, or teaching myself bass guitar. Or, I'm probably solving a new challenge -- like building a website!
-            </p>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <div class="contact-container">
         <h1>Contact Me</h1>

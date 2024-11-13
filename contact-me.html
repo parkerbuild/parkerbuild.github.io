@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Basic reset */
         body, h1, p {
@@ -11,171 +12,205 @@
             padding: 0;
             box-sizing: border-box;
         }
-        /* Background and text styling */
+
+        /* Body & Hero Section */
         body {
-            font-family: Arial, sans-serif;
-            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section with Image Background */
+        .hero-section {
+            background: url('your-hero-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            color: white;
         }
-        .contact-container {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
+
+        .hero-container {
+            background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+            display: flex;
             padding: 40px;
+            width: 80%;
+            max-width: 1200px;
             border-radius: 10px;
-            width: 90%;
-            max-width: 600px;
         }
-        .contact-container h1 {
-            font-size: 36px;
+
+        .hero-image {
+            flex: 1;
+            max-width: 35%;
+            margin-right: 20px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .hero-text {
+            flex: 2;
+            color: #333;
+        }
+
+        .hero-text h2 {
+            font-size: 2rem;
+            font-weight: bold;
             margin-bottom: 20px;
         }
-        .contact-container p {
-            font-size: 18px;
+
+        .hero-text p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* 3-Column Section */
+        .three-column-section {
+            padding: 50px 10%;
+            background-color: #f5f5f5;
+        }
+
+        .three-column-section h2 {
+            text-align: center;
+            font-size: 2rem;
             margin-bottom: 30px;
         }
-        .contact-container .contact-info {
-            margin-bottom: 30px;
+
+        .three-column-section .columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
         }
+
+        .three-column-section .column {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .three-column-section .column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .three-column-section .column p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Gradient Section */
+        .gradient-section {
+            background: linear-gradient(to right, #E6A1A1, #9B73AA); /* Creative woman gradient */
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .gradient-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .gradient-section p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Info Styling */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 1rem;
+        }
+
         .contact-info a {
             color: #E1B76F;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 10px;
-        }
-        .contact-info span {
-            font-weight: bold;
-        }
-        /* Contact Page Styling */
-        .contact-page {
-            background-color: rgba(0, 0, 0, 0.1); /* Transparent background */
-            padding: 50px 20px;
-            font-family: Arial, sans-serif;
         }
 
-        /* Image and Text Section */
-        .contact-section {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-bottom: 50px;
-           
-            padding: 50px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.3); /* Transparent background with slight darkening */
-        }
-
-        .contact-section .image-wrapper {
-            flex: 1;
-            max-width: 40%;
-            padding: 20px;
-        }
-
-        .contact-section .image-wrapper img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-section .text-wrapper {
-            flex: 1;
-            max-width: 60%;
-            padding: 20px;
-            color: #333;
-        }
-
-        .contact-section .text-wrapper h2 {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .contact-section .text-wrapper p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        /* Contact Info Section */
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 30px;
-            padding: 30px;
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-info h3 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        .contact-info .contact-item {
-            font-size: 1rem;
-            margin: 5px 0;
-            color: #333;
-        }
-
-        .contact-info .contact-item a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-
-        .contact-info .contact-item a:hover {
+        .contact-info a:hover {
             text-decoration: underline;
         }
 
-        /* Responsiveness */
+        /* Mobile Responsiveness */
         @media screen and (max-width: 768px) {
-            .contact-section {
+            .hero-container {
                 flex-direction: column;
-                padding: 30px;
+                align-items: center;
             }
 
-            .contact-section .image-wrapper, .contact-section .text-wrapper {
-                max-width: 100%;
+            .hero-image {
+                margin-bottom: 20px;
             }
 
-            .contact-info {
-                padding: 20px;
-                margin-top: 20px;
+            .three-column-section .columns {
+                flex-direction: column;
+            }
+
+            .three-column-section .column {
+                margin-bottom: 20px;
+            }
+
+            .gradient-section {
+                padding: 40px 10%;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Contact Section with Background and Info -->
-    <section class="contact-section">
-        <div class="contact-wrapper">
-            
-            <div class="text-wrapper">
-                <h2>My Story</h2>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="your-image.jpg" alt="Your Image">
+            </div>
+            <div class="hero-text">
+                <h2>About Me</h2>
                 <p>
-                    I was fortunate enough to run point on all digital production at Rodgers Townsend, a local powerhouse and Omnicom network shop with over 20 million in revenue. At my previous agency, I specialized in creating custom digital solutions like websites and applications designed to help farmers with critical tasks such as tracking planting schedules, spray timings, and crop performance by region. I bring a unique balance of creative problem-solving, deep production expertise, and strong client relationships to new projects and challenges. 
-                    Outside of work you will likely find me putting together a puzzle, reading, or teaching myself bass guitar. Or, I'm probably solving a new challenge -- like building a website!
+                    I was fortunate enough to run point on all digital production at Rodgers Townsend, a local powerhouse and Omnicom network shop with over 20 million in revenue. At my previous agency, I specialized in creating custom digital solutions like websites and applications designed to help farmers with critical tasks such as tracking planting schedules, spray timings, and crop performance by region. I bring a unique balance of creative problem-solving, deep production expertise, and strong client relationships to new projects and challenges. Outside of work you will likely find me putting together a puzzle, reading, or teaching myself bass guitar. Or, I'm probably solving a new challenge -- like building a website!
                 </p>
             </div>
         </div>
     </section>
 
-    <div class="contact-container">
-        <h1>Contact Me</h1>
-        <p>If you'd like to get in touch, feel free to connect with me through the links below:</p>
+    <!-- 3 Column Section -->
+    <section class="three-column-section">
+        <h2>What I Do</h2>
+        <div class="columns">
+            <div class="column">
+                <h3>Strategy</h3>
+                <p>Helping companies create clear, actionable marketing strategies that deliver results. Whether it’s for a digital campaign or a website project, I can guide your team through the process.</p>
+            </div>
+            <div class="column">
+                <h3>Design</h3>
+                <p>Turning ideas into creative, user-centered designs that resonate with your target audience. From wireframes to final designs, I ensure a cohesive look and feel.</p>
+            </div>
+            <div class="column">
+                <h3>Development</h3>
+                <p>Building clean, functional websites and custom applications with a focus on user experience. I work with the latest technologies to bring your ideas to life.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Contact Info -->
+    <!-- Gradient Section for Contact Info -->
+    <section class="gradient-section">
+        <h3>Contact Me</h3>
         <div class="contact-info">
             <p>Email: <a href="mailto:mbuchananparker@gmail.com">mbuchananparker@gmail.com</a></p>
             <p>Phone: <span>314-488-7673</span></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/marquita-parker" target="_blank">LinkedIn</a></p>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
+
